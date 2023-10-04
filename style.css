@@ -19,7 +19,10 @@
   min-height: 100vh;
   padding: 20px;
 }
-)
+
+.hide {
+  display: none !important;
+}
 
 .heading {
   margin: 10px auto 40px auto;
@@ -56,6 +59,7 @@
 
 .search-box .search {
   display: flex;
+  margin: 10px 0;
 }
 
 .search-box input {
@@ -64,4 +68,73 @@
   margin-right: 10px;
   padding: 10px;
   font-size: 16px;
+}
+
+.search-box i.reset {
+  font-size: 24px;
+  height: 100%;
+  padding: 10px 0px;
+  cursor: pointer;
+}
+
+.task-box .tasks {
+  margin: 10px 0px;
+}
+
+.task-box li {
+  background-color: lightgray;
+  margin: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.task-box span {
+  padding: 10px;
+}
+
+.task-box i.delete {
+  color: white;
+  background-color: red;
+  border-radius: 0px 2px 2px 0px;
+  height: 100%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.task-box .add {
+  display: flex;
+  margin: 30px 0px 10px 0px;
+}
+
+.task-box input[type="text"] {
+  border-radius: 3px;
+  width: 100%;
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.task-box input[type="submit"] {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: limegreen;
+  border: 0px;
+  border-radius: 3px;
+}
+
+.message {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.message .clear {
+  border: 0px;
+  background-color: darkblue;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 3px;
 }
