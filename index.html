@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./images/icons8-favicon-96.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Tasks app</title>
+  </head>
+  <body>
+    <main>
+      <div class="wrap">
+        <section class="heading">
+          <p class="title">Manage Tasks - Mior</p>
+          <p class="subtitle">Manage Your Tasks</p>
+        </section>
+
+        <section class="task-manager">
+          <div class="search-box">
+            <form class="search">
+              <input
+                type="text"
+                name="task"
+                placeholder="search task"
+                autocomplete="off"
+              />
+              <i class="bi bi-x-circle"></i>
+            </form>
+          </div>
+          <div class="task-box">
+            <ul class="tasks">
+              <li>
+                <span>Task 1</span>
+                <i class="bi bi-trash3 delete"></i>
+              </li>
+              <li><span>Task 2</span> <i class="bi bi-trash3 delete"></i></li>
+              <li><span>Task 3</span> <i class="bi bi-trash3 delete"></i></li>
+            </ul>
+            <form class="add">
+              <input
+                type="text"
+                name="task"
+                placeholder="add task"
+                autocomplete="off"
+              />
+              <input type="submit" value="Add" />
+            </form>
+          </div>
+          <div class="message">
+            <span>You have 3 pending tasks.</span>
+            <button class="clear">Clear All</button>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script type="text/javascript" src="./index.js"></script>
+  </body>
+</html>
